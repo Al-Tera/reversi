@@ -12,8 +12,6 @@ function Board() {
     const [defaultPlacement, setDefaultPlacement] = useState<any[]>([])
     const boardLabels = document.querySelectorAll('#parentLabel')
 
-    const [isActive, setIsActive] = useState(false)
-
     useEffect(() => {
         if (boardRC) {
             const middleBoard = Math.floor(boardBy / 2)
@@ -310,7 +308,6 @@ function Board() {
                                 <span className='label' style={{ '--color': turn ? 'black' : 'white' }}>
                                     <span id={`label${i}`} className="child"></span>
                                 </span>
-                                <p>{i}</p>
                             </label>
                         )
                     })
