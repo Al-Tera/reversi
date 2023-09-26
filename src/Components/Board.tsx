@@ -3,7 +3,7 @@ import ResetIcon from '../assets/reset.svg'
 
 function Board() {
 
-    const boardRC = 6
+    const boardRC = 8
     const boardBy = boardRC * boardRC
     const [turn, setTurn] = useState(false)
     const [placements, setPlacements] = useState<any[]>([])
